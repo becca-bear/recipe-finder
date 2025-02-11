@@ -19,7 +19,7 @@ export default async function RecipePage({ params }: { params: { id: string } })
 
   try {
     recipe = await getRecipe(params.id)
-  } catch (error) {
+  } catch {
     notFound()
   }
 
